@@ -159,5 +159,10 @@ namespace calc
         {
             disable(); //Call disable() function to OFF Calculator
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            enable(); //Call enable() function to ON calculator
+        }
     }
 }
