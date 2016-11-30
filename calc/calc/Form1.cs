@@ -17,6 +17,39 @@ namespace calc
             InitializeComponent();
         }
 
+        public void disable() //Create one method to disable Calculator
+        {
+            //Follow are Disable when call me disable() function
+ 
+            textBox1.Enabled = false;
+            button1.Show();            // It will be still Display
+            button2.Show();            //It will bi Hide
+            button3.Enabled = false;
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = false;
+            button8.Enabled = false;
+            button9.Enabled = false;
+            button10.Enabled = false;
+            button11.Enabled = false;
+            button12.Enabled = false;
+            button13.Enabled = false;
+            button14.Enabled = false;
+            button15.Enabled = false;
+            button16.Enabled = false;
+            button17.Enabled = false;
+            button18.Enabled = false;
+            button19.Enabled = false;
+            button20.Enabled = false;
+            button21.Enabled = false;
+        }
+
+
+
+
+
+
         private void button12_Click(object sender, EventArgs e)
         {
             // Display dot(.) in Textbox when press dot(.) button with Red color
@@ -92,6 +125,11 @@ namespace calc
             //Displayed 9 in Textbox when press 9 button with Red color
             textBox1.Text = textBox1.Text + 9;
             textBox1.ForeColor = Color.LightCoral;
+        }
+
+        private void button2_Click(object sender, EventArgs e)// OFF Button
+        {
+            disable(); //Call disable() function to OFF Calculator
         }
     }
 }
