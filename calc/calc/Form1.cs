@@ -16,5 +16,12 @@ namespace calc
         {
             InitializeComponent();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            // Display dot(.) in Textbox when press dot(.) button with Red color
+            textBox1.Text = textBox1.Text + ".";
+            textBox1.ForeColor = Color.Red;
+        }
     }
 }
