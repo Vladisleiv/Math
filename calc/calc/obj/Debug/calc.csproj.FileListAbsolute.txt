@@ -1,0 +1,1 @@
+C:\Math\calc\calc\bin\Debug\calc.exe.config
