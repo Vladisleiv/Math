@@ -17,6 +17,10 @@ namespace calc
             InitializeComponent();
         }
 
+        float num, ans;
+        int count;
+        
+
         public void disable() //Create one method to disable Calculator
         {
             //Follow are Disable when call me disable() function
@@ -31,7 +35,6 @@ namespace calc
             button7.Enabled = false;
             button8.Enabled = false;
             button9.Enabled = false;
-            button10.Enabled = false;
             button11.Enabled = false;
             button12.Enabled = false;
             button13.Enabled = false;
@@ -61,7 +64,6 @@ namespace calc
             button7.Enabled = true;
             button8.Enabled = true;
             button9.Enabled = true;
-            button10.Enabled = true;
             button11.Enabled = true;
             button12.Enabled = true;
             button13.Enabled = true;
@@ -164,5 +166,101 @@ namespace calc
         {
             enable(); //Call enable() function to ON calculator
         }
+
+        private void button5_Click(object sender, EventArgs e) //Addition Button
+        {
+            num = float.Parse(textBox1.Text);
+            textBox1.Clear(); //Clear the Text Box
+            textBox1.Focus(); //Focus on Text Box after clearning Text box
+            count = 1;        //count store case
+            label2.Text = num.ToString() + "+";  //Dispal Text on lable
+        }
+
+        private void button6_Click(object sender, EventArgs e)// Subtraction Button
+        {
+            num = float.Parse(textBox1.Text);
+            textBox1.Clear(); //Clear the Text Box
+            textBox1.Focus(); //Focus on Text Box after clearning Text box
+            count = 2;        //count store case value
+            label2.Text = num.ToString() + "-";  //Dispal Text on lable
+        }
+
+        private void button8_Click(object sender, EventArgs e)// Multiplication Button
+        {
+            num = float.Parse(textBox1.Text);
+            textBox1.Clear(); //Clear the Text Box
+            textBox1.Focus(); //Focus on Text Box after clearning Text box
+            count = 3;        //count store switch case value
+            label2.Text = num.ToString() + "*";  //Dispal Text on lable
+        }
+
+        private void button7_Click(object sender, EventArgs e) //Division Button
+        {
+            num = float.Parse(textBox1.Text);
+            textBox1.Clear(); //Clear the Text Box
+            textBox1.Focus(); //Focus on Text Box after clearning Text box
+            count = 4;        //count store switch case value
+            label2.Text = num.ToString() + "/";  //Dispal Text on lable
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            compute(); // call compute() function to perform such Operation
+            label2.Text = ""; //clear the tex on the label
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            num = float.Parse(textBox1.Text);
+            textBox1.Clear(); //Clear the Text Box
+            textBox1.Focus(); //Focus on Text Box after clearning Text box
+            count = 5;        //count store switch case value
+            label2.Text = num.ToString() + "%";  //Dispal Text on lable
+        }
+
+        private void button4_Click(object sender, EventArgs e) // Clear Button
+        {
+            textBox1.Text = "";
+        }
+
+        public void compute()
+        {
+            switch(count) // Creating Switch Statement
+            {
+                case 1:
+                    ans = num + float.Parse(textBox1.Text);             //It performs Addition
+                    textBox1.Text = ans.ToString();                     //Converted Float into string
+                    break;
+
+                case 2:
+                    ans = num - float.Parse(textBox1.Text);             //It performs Subtraction
+                    textBox1.Text = ans.ToString();                     //Converted Float into string
+                    break;
+
+
+                case 3:
+                    ans = num * float.Parse(textBox1.Text);             //It performs Multiplication
+                    textBox1.Text = ans.ToString();                     //Converted Float into string
+                    break;
+
+
+                case 4:
+                    ans = num / float.Parse(textBox1.Text);             //It performs Division
+                    textBox1.Text = ans.ToString();                     //Converted Float into string
+                    break;
+
+                case 5:
+                    ans = num % float.Parse(textBox1.Text);             
+                    textBox1.Text = ans.ToString();                     
+                    break;
+
+                default:
+                    break;
+                
+            }
+        }
+
+
+
     }
 }
