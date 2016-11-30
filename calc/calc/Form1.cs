@@ -220,7 +220,19 @@ namespace calc
 
         private void button4_Click(object sender, EventArgs e) // Clear Button
         {
-            textBox1.Text = "";
+            textBox1.Text = "";// Clear the text area
+        }
+
+        private void button3_Click(object sender, EventArgs e) // Backspace button
+        {
+            int length = textBox1.TextLength - 1;
+            string text = textBox1.Text;
+            textBox1.Clear();
+
+            for (int i = 0; i < length; i++)
+            {
+                textBox1.Text = textBox1.Text + text[i];
+            }
         }
 
         public void compute()
