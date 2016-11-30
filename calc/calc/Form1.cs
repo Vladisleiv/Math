@@ -23,7 +23,7 @@ namespace calc
  
             textBox1.Enabled = false;
             button1.Show();            // It will be still Display
-            button2.Show();            //It will bi Hide
+            button2.Hide();            //It will bi Hide
             button3.Enabled = false;
             button4.Enabled = false;
             button5.Enabled = false;
@@ -43,10 +43,38 @@ namespace calc
             button19.Enabled = false;
             button20.Enabled = false;
             button21.Enabled = false;
+            button22.Enabled = false;
         }
 
 
+        public void enable() //Now create function to ON calculator
+        {
+            //Follow are Enabled when we call enable() function
 
+            textBox1.Enabled = true;
+            button2.Show();             //It will be still Dispaly
+            button1.Hide();             //It will be Hide
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            button9.Enabled = true;
+            button10.Enabled = true;
+            button11.Enabled = true;
+            button12.Enabled = true;
+            button13.Enabled = true;
+            button14.Enabled = true;
+            button15.Enabled = true;
+            button16.Enabled = true;
+            button17.Enabled = true;
+            button18.Enabled = true;
+            button19.Enabled = true;
+            button20.Enabled = true;
+            button21.Enabled = true;
+            button22.Enabled = true;
+        }
 
 
 
