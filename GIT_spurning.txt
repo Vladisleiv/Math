@@ -1,1 +1,29 @@
 
+1. Hvað gera eftirfarandi Linux skipanir?
+	cd The cd command is used to change the current directory
+	cd ~ This is easier than typing the full name of the user's home directory, for instance, /home/josephine in the case of a user named josephine.
+	ls This merges the file listing in the directory cache index with the actual working directory list, and shows different combinations of the two.
+	pwd print working directory
+	mkdir Create a folder in the current directory (with spaces in the folder name): 
+
+2. Hvað gera eftirfarandi git skipanir og hvers vegna eru þær gagnlegar?
+	git clone=Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository (visible using git branch -r), and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch.
+	git log=Shows the commit logs.The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands to control how the changes each commit introduces are shown.
+	git status=Displays paths that have differences between the index file and the current HEAD commit, paths that have differences between the working tree and the index file, and paths in the working tree that are not tracked by Git
+	git diff=Show changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes between two blob objects, or changes between two files on disk.
+	git checkout=Updates files in the working tree to match the version in the index or the specified tree. If no paths are given, git checkout will also update HEAD to set the specified branch as the current branch.
+
+3. Hver er munurinn á eftirfarandi git skipunum:
+	a) git diff 
+	b) git diff --staged 
+	c) git diff commit1 commit2
+
+4. 	Hvað er útgáfustýring (e.version control)? 
+
+5.	Hverjir eru helstu kostir við að nota GIT?
+
+6.	Hversu oft telur þú að eigi að gera commit í verkefni, rökstuddu?
+
+7.	Hvað er "Working directory"?" "Staging area"?" og "Repository" í GIT?
+
+8.	Hvenær er sniðugt að nota greinar (branches)? 
