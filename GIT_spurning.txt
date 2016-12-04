@@ -14,16 +14,18 @@
 	git checkout=Updates files in the working tree to match the version in the index or the specified tree. If no paths are given, git checkout will also update HEAD to set the specified branch as the current branch.
 
 3. Hver er munurinn á eftirfarandi git skipunum:
-	a) git diff 
-	b) git diff --staged 
+	a) git diff-Show changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes between two blob objects, or changes between two files on disk.
+	b) git diff --staged -will only show changes to files in the "staged" area. git diff HEAD will show all changes to tracked files. If you have all changes staged for commit, then both commands will output the same.
 	c) git diff commit1 commit2
 
-4. 	Hvað er útgáfustýring (e.version control)? 
+4. 	Hvað er útgáfustýring (e.version control)? -Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
 
-5.	Hverjir eru helstu kostir við að nota GIT?
+5.	Hverjir eru helstu kostir við að nota GIT? - Switching from a centralized version control system to Git changes the way your development team creates software. And, if you’re a company that relies on its software for mission-critical applications, altering your development workflow impacts your entire business.
 
-6.	Hversu oft telur þú að eigi að gera commit í verkefni, rökstuddu?
+6.	Hversu oft telur þú að eigi að gera commit í verkefni, rökstuddu? - almost every time when i make some new part
 
 7.	Hvað er "Working directory"?" "Staging area"?" og "Repository" í GIT?
-
+	Working directory is the directory with your source files under git control (in the root of all dirs under control .git file is present). 
+	Staging is a step before the commit process in git. That is, a commit in git is performed in two steps: staging and actual commit.
+	You can get a Git project using two main approaches. The first takes an existing project or directory and imports it into Git. The second clones an existing Git repository from another server.
 8.	Hvenær er sniðugt að nota greinar (branches)? 
